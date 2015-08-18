@@ -190,3 +190,28 @@ Place of Orgin: Berlin, West Germany
 Age: 42
 Weight: 144lbs
 
+Game Play Tips
+------
+
+Basic Boxing Technique
+
+1. More of your punches will reach the opponent if you aim where he's not guarding.
+
+2. Player won't be able to punch when he's tired (when he has no heart's), and his oppent will immediately start punching.
+
+Dodge his punches and recover hearts
+
+3. Player left punch is a little faster than his right, but it's not quite as strong.
+
+
+Winning Boxing Technique
+
+1. Dodge opponent's punches and then punch back immediately. You'll starle your opponent (his face will show it).
+
+This is your chance --- punch furiously and you should score.
+
+2. If your opponent comes up on the count of 1 after you've knocked hm down, go with a uppercut for a sure knock-down.
+
+3. During an interval: Use the advice of the trainer/coach to your best advantage.
+
+
