@@ -5,6 +5,17 @@ Simple punch out like game made in pygame.
 
 Still planning out the game
 
+Splash Screen
+------
+
+The splash screen has two options to choose between 
+  New
+  Continue
+  
+New starts new game from level 1
+
+Continue lets you start off at the last boss you where at with same statistics 
+
 Player Moves In GAME
 ------
 
