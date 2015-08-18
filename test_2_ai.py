@@ -66,11 +66,11 @@ enemy_y = 145
 player_x = 220
 player_y = 245
 
-movex = 40
-movey = 40
+movex = 10
+movey = 10
 
-aimovex = 40
-aimovey = 40
+aimovex = 10
+aimovey = 10
 
 activeCharacterImage = player_default
 activeEnemyImage = enemy_default
@@ -102,26 +102,24 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    for event in pygame.event.get():
-
-        if event.type == ai_uppercut_event:
-            aimovex =+ 80
+        elif event.type == ai_uppercut_event:
+            aimovex =+ 10
             activeEnemyImage = ai_uppercut_image
 
         elif event.type == ai_l_punch_event:
-            aimovex =+ 80
+            aimovex =+ 10
             activeEnemyImagee = ai_l_punch_image
 
         elif event.type == ai_r_punch_event:
-            aimovex =- 80
+            aimovex =- 10
             activeEnemyImage = ai_r_punch_image
 
         elif event.type == ai_r_dodge_event:
-            aimovey =+ 80
+            aimovey =+ 10
             activeEnemyImage = ai_r_dodge_image
 
         elif event.type == ai_l_dodge_event:
-            aimovey =- 80
+            aimovey =- 10
             activeEnemyImage = ai_l_dodge_image 
 
         enemy_x += aimovex
@@ -143,19 +141,19 @@ while running:
  
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT:
-                movex =- 40
+                movex =- 10
                 activeCharacterImage = player_left
 
             elif event.key == pygame.K_RIGHT:
-                movex =+ 40
+                movex =+ 10
                 activeCharacterImage = player_right
 
             elif event.key == pygame.K_UP:
-                movey =- 40
+                movey =- 10
                 activeCharacterImage = player_up
 
             elif event.key == pygame.K_DOWN:
-                movey =+ 40
+                movey =+ 10
                 activeCharacterImage = player_down
         else:
             activeCharacterImage = player_default
