@@ -58,6 +58,57 @@ Opponent's dialogue
 
 ex. "Watch The JAW!! Don't Hit My Jaw!!
 
+During Match Statistics on Screen
+------
+
+Hearts
+(Number of Hearts)
+
+Hearts (are the Players Fighting spirit)
+The Player can punch whenever he has one or more hearts.
+
+He will lose a heart each time his opponent blocks or dodges out of the way of his punches.
+
+If he is hit he loses three hearts.
+
+When the player is to tired to punch (he will change to color (different greenish sprite set) and
+must avoi punches by dodging or ducking to gain hearts.
+
+
+Stars = []
+(Number of Stars)
+The number of stars controls the number of uppercuts the player can use.
+
+When the player scores an effective punch, 
+A star will appear on his head and 
+The number of stars will increase by one.
+
+when the player is hit he loses one star 
+if knocked down he loses all of his stars.
+
+The Maximum number of stars is three.
+
+Stamina Meters
+These meters show how much stima the player and his opponent have left.
+
+Stamina will drop when a boxer is punched.
+
+A boxer will go down if his stamina drops to zero
+
+His stamina will recover when he gets back up (depending on ow quickly he gets back up)
+
+During between splash screen hold down space bar to get additional stamina from coach
+
+Match Points
+Match points are won when Player punches his opponent, 
+Uppercuts, and effective punches win the greatest number of match points.
+
+Elapsed Time
+Show the lapsed time for the current round
+
+Round:
+Shows the current round number
+
 Player Moves In GAME
 ------
 
