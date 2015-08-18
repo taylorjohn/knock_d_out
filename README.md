@@ -43,6 +43,21 @@ WEIGHT: 107  (weight in pounds)
 RANKED: 13 (Opponent's rank)
 Opponent's NAME
 
+
+Screen Displayed Between Rounds
+------
+
+These dialogue maybe a helpful hint to winning the match!!
+
+Removes location information
+Add The Coaches dialogue of encouragement
+
+ex.  "Stick And Move, Stick And MOVE!"
+
+Opponent's dialogue
+
+ex. "Watch The JAW!! Don't Hit My Jaw!!
+
 Player Moves In GAME
 ------
 
