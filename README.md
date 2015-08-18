@@ -1,4 +1,5 @@
 KNOCK'D OUT!!!
+======
 
 Simple punch out like game made in pygame.
 
@@ -15,6 +16,32 @@ The splash screen has two options to choose between
 New starts new game from level 1
 
 Continue lets you start off at the last boss you where at with same statistics 
+
+Pre Fight Screen
+------
+
+Circuit Name
+	Minor Circuit
+
+Players Statistics
+
+FROM LOCATION  (Place of orgin)
+AGE:  13      (age in years)
+WEIGHT: 107  (weight in pounds)
+0 Wins - 0 Losses    0 KOs (Players match record)
+RANKED: 13 (Players rank)
+PLAYER's NAME (Player's name)
+
+VS.
+
+Opponent's Statistics
+
+FROM LOCATION  (Place of orgin)
+AGE:  13      (age in years)
+WEIGHT: 107  (weight in pounds)
+0 Wins - 0 Losses    0 KOs (Opponents match record)
+RANKED: 13 (Opponent's rank)
+Opponent's NAME
 
 Player Moves In GAME
 ------
