@@ -160,3 +160,33 @@ TKO
 ⋅⋅* TKO'd after 3 or 4 total knock downs
 ⋅⋅* if the player has 3 ko's then they are tko'd and game over
 
+List of Opponents
+------
+
+
+Opponent#1
+[Picture] Opponents Nickname
+Opponents Name
+
+France's Glass Jaw
+GLASS JOE
+
+Ranking: Minor circuit, 2nd
+Record: 1 win, 99 losses, 1 KO
+Place of Orgin: Paris, France
+Age: 38
+Weight: 110lbs
+
+Opponent#2
+[Picture] Opponents Nickname
+Opponents Name
+
+The German Steel Machine
+Von Kaiser
+
+Ranking: Minor circuit, top
+Record: 23 wins, 13 losses, 10 KO's
+Place of Orgin: Berlin, West Germany
+Age: 42
+Weight: 144lbs
+
