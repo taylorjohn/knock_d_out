@@ -105,22 +105,39 @@ while running:
         elif event.type == ai_uppercut_event:
             aimovex =+ 10
             activeEnemyImage = ai_uppercut_image
+            aimovex =- 10
+            activeEnemyImage = enemy_default
 
         elif event.type == ai_l_punch_event:
+            aimovey =+ 30
             aimovex =+ 10
             activeEnemyImagee = ai_l_punch_image
+            aimovey =- 30
+            aimovex =- 10
+            activeEnemyImagee = enemy_default
 
         elif event.type == ai_r_punch_event:
-            aimovex =- 10
+            aimovey =- 30
+            aimovex =+ 10
             activeEnemyImage = ai_r_punch_image
+            aimovey =+ 30
+            aimovex =- 10
+            activeEnemyImage = enemy_default
+
 
         elif event.type == ai_r_dodge_event:
-            aimovey =+ 10
+            aimovex =- 40
             activeEnemyImage = ai_r_dodge_image
+            aimovex =+ 40
+            activeEnemyImage = enemy_default
 
         elif event.type == ai_l_dodge_event:
             aimovey =- 10
-            activeEnemyImage = ai_l_dodge_image 
+            aimovex =- 30
+            activeEnemyImage = ai_l_dodge_image
+            aimovey =+ 10
+            aimovex =+ 30
+            activeEnemyImage = enemy_default 
 
         enemy_x += aimovex
         enemy_y += aimovey
