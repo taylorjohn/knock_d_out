@@ -97,6 +97,28 @@ pygame.time.set_timer(ai_r_dodge_event, MOVE_DODGE_RIGHT)
 pygame.time.set_timer(ai_l_dodge_event, MOVE_DODGE_LEFT)
 # Need a way to get him back to the defualt location
  
+
+
+ ###MENU
+def game_intro():
+
+    intro = True
+
+    while intro:
+        for event in pygame.event.get():
+            print(event)
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                quit()
+                
+        screen.fill(BLACK)
+        largeText = pygame.font.Font('freesansbold.ttf',115)
+        TextSurf, TextRect = text_objects("KNOCK'D OUT!!!", largeText)
+        TextRect.center = ((display_width/2),(display_height/2))
+        screen.blit(TextSurf, TextRect)
+        pygame.display.update()
+        clock.tick(25)
+
 # -------- Main Program Loop -----------
 
 paused  = False
