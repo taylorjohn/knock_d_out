@@ -250,3 +250,79 @@ with open("data1.txt", "r", encoding="utf-8") as file:
    print data["PLAYER"]
 file.close()
 '''
+
+
+Ring
+------
+
+The Ring What get put where on the Ring
+
+width = 512
+height = 448
+
+Back Ground Image
+#  Location of background image x, y
+
+# pick background image change with enemy maybe
+background1 = pygame.image.load("background_mini.png")
+ 
+# Set the width and height of the screen [width, height]
+size = (512, 448)
+screen = pygame.display.set_mode(size)
+font = pygame.font.SysFont(None, 32)
+
+        # First, clear the screen to black. Don't put other drawing commands
+        # above this, or they will be erased with this command.
+        screen.fill(BLACK)
+        screen.blit(background1,(0,0))
+
+
+# Star position for enemy should also be the position he defaults back too
+enemy_x = 235
+enemy_y = 145
+
+# Star position for the player
+player_x = 220
+player_y = 245
+
+# In Game Clock
+
+size 32 font fits
+
+#Location of text for the timer
+counter text = (425, 35)
+
+3:00
+minutes, seconds
+Counts up from 0 to 3 minutes
+
+Points:
+
+# Health Meters 
+
+In order to get those nifty health meters going we need to figure out there locations
+
+Ok, they are located at 30 pixels down from top and go down another 15 pixel to 45 pixel down
+
+so each meter is 100 pixels wide and 15 pixel high
+
+100 pixels works out great for figuring out amount on it!!!
+
+# Player's Health Meter
+Start's at 100
+player meter starts at 175 pixel over from left side and goes to 275
+
+# Opposite's Health Meter
+
+# Opposite meter starts at 290 pixel over from left side and goes to 390
+
+
+Stars
+
+Number of stars starts 60 pixels over from left side and 50 pixels down from the top
+
+Hearts
+
+Number of stars starts 120 pixels over from left side and 50 pixels down from the top
+
+
