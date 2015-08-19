@@ -3,11 +3,15 @@ KNOCK'D OUT!!!
 
 Simple punch out like game made in pygame.
 
+![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/startscreen_splash_mini.png "KNOCK'D OUT!!")
+
 
 Still planning out the game
 
 Splash Screen
 ------
+
+![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/startscreen_splash_mini.png "KNOCK'D OUT!!")
 
 The splash screen has two options to choose between 
   New
@@ -61,6 +65,8 @@ ex. "Watch The JAW!! Don't Hit My Jaw!!
 During Match Statistics on Screen
 ------
 
+![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/background_mini.png "KNOCK'D OUT!!")
+
 Hearts
 (Number of Hearts)
 
@@ -108,6 +114,8 @@ Show the lapsed time for the current round
 
 Round:
 Shows the current round number
+
+![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/background_mini_text.png "KNOCK'D OUT!!")
 
 Player Moves In GAME
 ------
