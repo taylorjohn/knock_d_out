@@ -60,17 +60,22 @@ ai_r_punch_event = pygame.USEREVENT + 3
 ai_r_dodge_event = pygame.USEREVENT + 4
 ai_l_dodge_event = pygame.USEREVENT + 5
 
+# Star position for enemy should also be the position he defualts back too
 enemy_x = 235
 enemy_y = 145
 
+# Star position for the player
 player_x = 220
 player_y = 245
+
 
 movex = 10
 movey = 10
 
 aimovex = 10
 aimovey = 10
+
+direction = (0,0)
 
 activeCharacterImage = player_default
 activeEnemyImage = enemy_default
@@ -90,6 +95,7 @@ pygame.time.set_timer(ai_l_punch_event, MOVE_PUNCH_LEFT)
 pygame.time.set_timer(ai_r_punch_event, MOVE_PUNCH_RIGHT)
 pygame.time.set_timer(ai_r_dodge_event, MOVE_DODGE_RIGHT)
 pygame.time.set_timer(ai_l_dodge_event, MOVE_DODGE_LEFT)
+# Need a way to get him back to the defualt location
  
 # -------- Main Program Loop -----------
 
@@ -109,34 +115,32 @@ while running:
             activeEnemyImage = enemy_default
 
         elif event.type == ai_l_punch_event:
-            aimovey =+ 30
-            aimovex =+ 10
+            aimovey =+ 10
             activeEnemyImagee = ai_l_punch_image
-            aimovey =- 30
             aimovex =- 10
             activeEnemyImagee = enemy_default
 
         elif event.type == ai_r_punch_event:
-            aimovey =- 30
+            aimovey =- 10
             aimovex =+ 10
             activeEnemyImage = ai_r_punch_image
-            aimovey =+ 30
+            aimovey =+ 10
             aimovex =- 10
             activeEnemyImage = enemy_default
 
 
         elif event.type == ai_r_dodge_event:
-            aimovex =- 40
+            aimovex =- 10
             activeEnemyImage = ai_r_dodge_image
-            aimovex =+ 40
+            aimovex =+ 10
             activeEnemyImage = enemy_default
 
         elif event.type == ai_l_dodge_event:
             aimovey =- 10
-            aimovex =- 30
+            aimovex =- 10
             activeEnemyImage = ai_l_dodge_image
             aimovey =+ 10
-            aimovex =+ 30
+            aimovex =+ 10
             activeEnemyImage = enemy_default 
 
         enemy_x += aimovex
@@ -146,7 +150,6 @@ while running:
             # when the reload timer runs out, reset it
             #reloaded = True
             #pygame.time.set_timer(reloaded_event, 0)
-
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
                 running = False
@@ -187,6 +190,7 @@ while running:
 
         player_x += movex
         player_y += movey
+
 
     if not paused:
         counting_time = pygame.time.get_ticks() - start_time

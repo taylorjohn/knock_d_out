@@ -1,0 +1,59 @@
+
+
+
+
+The Player needs to store the following information and also save and reload a saved game.
+
+I am going to create a dictionary and use repr()/eval() to convert to string and from string:
+
+data = {
+    "PLAYER":Lil Mac,
+    "LOCATION": Bronx, NY
+    "AGE": 13
+    "WEIGHT": 107
+    "WINS": 0
+    "LOSSES": 0
+    "KOs": 0
+    "RANKED": 13
+    "HEARTS": 0
+    "STARS": 0
+    "STAMINA": 100
+}
+
+with open("data1.txt", "w", encoding="utf-8") as file:
+   file.write(repr(data))
+file.close()
+
+Then to load:
+
+with open("data1.txt", "r", encoding="utf-8") as file:
+   data_string = file.readline()
+   data = eval(data_string)
+   print data["PLAYER"]
+file.close()
+
+
+
+This info does not change
+
+PLAYERNAME = Lil Mac
+LOCATION = Bronx, NY
+AGE = 13
+WEIGHT = 107
+
+This Player info changes
+
+WINS = 0
+LOSSES= 0
+KOs = 0
+RANKED = 13
+HEARTS = 0
+STARS = 0
+STAMINA = 100
+
+WINS = 0
+when the player wins a match it adds 1 to WINS TOTAL
+
+LOSSES= 0
+when the player wins a match it adds 1 to LOSSES TOTAL
+
