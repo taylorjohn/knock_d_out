@@ -24,6 +24,10 @@ Continue lets you start off at the last boss you where at with same statistics
 Pre Fight Screen
 ------
 
+![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/3596fed71d5011e378ba9823bdefa70b818982d8/art/prematch_splash_mini.png "KNOCK'D OUT!!")
+
+
+
 Circuit Name
 	Minor Circuit
 
