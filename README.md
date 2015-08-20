@@ -71,6 +71,9 @@ During Match Statistics on Screen
 
 ![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/background_mini.png "KNOCK'D OUT!!")
 
+
+![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/master/background_screen_map.png "KNOCK'D OUT!!")
+
 Hearts
 (Number of Hearts)
 
@@ -118,6 +121,8 @@ Show the lapsed time for the current round
 
 Round:
 Shows the current round number
+
+
 
 ![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/background_mini_text.png "KNOCK'D OUT!!")
 
