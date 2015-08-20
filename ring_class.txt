@@ -1,9 +1,11 @@
-The Ring What get put where on the Ring
 
+
+
+#The Ring What get put where on the Ring
 width = 512
 height = 448
 
-Back Ground Image
+#Back Ground Image
 #  Location of background image x, y
 
 # pick background image change with enemy maybe
