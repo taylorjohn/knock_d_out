@@ -19,6 +19,7 @@ font = pygame.font.SysFont(None, 32)
 score = 200
 hearts = 2
 stars = 1
+timer = 60
 
 
 def texts(score):
@@ -44,10 +45,6 @@ def texts(timer):
 	timertext=font.render(str(timer), 1,(255,255,255))
 	screen.blit(timertext, (425, 35)
 
- def texts(heart):
-	font=pygame.font.Font(None,30)
-	scoretext=font.render(str(score), 1,(255,255,255))
-	screen.blit(scoretext, (500, 457)
 
 pygame.display.set_caption("TEST TEXT ON MATCH")
  
@@ -74,13 +71,10 @@ while not done:
             done = True
  
     # --- Game logic should go here
- 
     # --- Drawing code should go here
-
     # above this, or they will be erased with this command.
     screen.fill(WHITE)
-
-    texts(score, hearts, timer, stars)
+    screen.blit(score, hearts, timer, stars)
  
     # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
