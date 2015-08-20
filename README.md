@@ -172,6 +172,82 @@ TKO
 ⋅⋅* TKO'd after 3 or 4 total knock downs
 ⋅⋅* if the player has 3 ko's then they are tko'd and game over
 
+Opponents AI
+------
+
+
+Taunt
+
+⋅⋅*tauntone_state = OpponentStateTauntone(self)
+
+⋅⋅*taunttwo_state = OpponentStateTaunttwo(self)
+
+
+Dodge a move left or right
+
+⋅⋅*dodgeleft_state = OpponentStateDodgeleft(self)
+
+⋅⋅*dodgeright_state = OpponentStateDodgeright(self)
+
+
+Left or right jab
+
+⋅⋅*jableft_state = OpponentStateJableft(self)
+
+⋅⋅*jabright_state = OpponentStateJabright(self)
+
+
+Delayed speed left or right jab
+
+⋅⋅*delayedhookleft_state = OpponentStateDelayedhookleft(self)
+
+⋅⋅*delayedhookright_state = OpponentStatedelayeDhookright(self)
+
+
+Left or right hook
+
+⋅⋅*hookleft_state = OpponentStateHookleft(self)
+
+⋅⋅* hookright_state = OpponentStateHookright(self)
+
+
+Delayed speed left or right hook
+
+⋅⋅*delayedhookleft_state = OpponentStateDelayedkookleft(self)
+
+⋅⋅*delayedhookright_state = OpponentStateDelayehookright(self)
+
+
+Left or right body blow
+
+⋅⋅*bodyblowleft_state = OpponentStateBodyblowleft(self)
+
+⋅⋅*bodyblowright_state = OpponentStateBodyblowright(self)
+
+
+Block a move or Duck out of the way
+
+⋅⋅*block_state = OpponentStateBlock(self)
+
+⋅⋅*duck_state = OpponentStateDuck(self)
+
+
+Uppercut
+
+⋅⋅*uppercut_state = OpponentStateUppercut(self)
+
+⋅⋅*delayeduppercut_state = OpponentStateDelayeduppercut(self)
+
+
+Opponents special move
+
+⋅⋅*special_state = OpponentStateSpecial(self)
+
+Opponents quick attack
+
+⋅⋅*quickattack_state = OpponentStateQuickattack(self)
+
+
 List of Opponents
 ------
 
