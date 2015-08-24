@@ -28,8 +28,37 @@ Pre Fight Screen
 
 
 
-Circuit Name
-	Minor Circuit
+Circuit Names
+
+Minor Circuit 
+opponent 1-3 minor circuit
+
+Opponent1 = Glass Joe Decision: 5,000 points
+Opponent2 = Von Kaiser Decision: 8,000 points
+Opponent3 = Piston Honda Decision: Cannot win by decision
+
+Major Circuit
+if opponent 4 - 7 major circuit
+
+Opponent4 = Don Flamenco Decision: 10,000 points
+Opponent5 = King Hippo Decision: Cannot win by decision
+Opponent6 = Great Tiger Decision: 10,000 points
+Opponent7 = Bald Bull Decision: Cannot win by decision
+
+World Circuit
+if opponent 8 - 12 World Circuit
+
+Opponent8 = Piston Honda rematch Decision: 3,000 points
+Opponent9 = Soda Popinski Decision: 10,000 points
+Opponent10 = Bald Bull rematch Decision: Cannot win by decision
+Opponent11 = Don Flamenco rematch Decision: 5,000 points
+Opponent12 = Mr. Sandman Decision: Cannot win by decision
+Opponent13 = Super Macho Man Decision: Cannot win by decision
+
+The Dream Fight
+
+Opponent13 = Super Macho Man Decision: Cannot win by decision
+
 
 Players Statistics
 
@@ -116,47 +145,92 @@ Match Points
 Match points are won when Player punches his opponent, 
 Uppercuts, and effective punches win the greatest number of match points.
 
+if get_hit minus 10 stamina and remove 1 star
+if stars is less 1 or equal to zero then punch button not active
+
+if hit_opp plus 10 points and add 1 star
+
+Scoring with match points occurs as follows:
+
+Normal punch  : 10 points
+Gaining a Star: 110 points
+Star punch    : 500 points
+Knockdown     : 1010 points
+Star Knockdown: 1500 points
+
+counter an attack:
+
+Blocking and countering
+Dodging and countering
+Interrupting it
+
+If you successfully dodge an opponent's attack, you will earn the opportunity to counter attack and stun them. 
+Once stunned, you can get in several free punches before they come to their senses.
+ 
+
 Elapsed Time
 Show the lapsed time for the current round
 
 Round:
 Shows the current round number
 
+if win current_opponent + 1
+elif lose current_opponent stay same number
+
+current_round = 3minutes
+if time reaches 3minutes
+current round + 1
+
+At the end of round 1 and round 2,
+your number of hearts is reset to the number you started the fight with, and your number of stars is reset to zero.
+
+
+If you knock down your opponent three times in a round, 
+you get an automatic technical knockout (TKO), 
+which means you win and get another KO added to your KO record. KO + 1
+
+
+Be aware that your opponents can also win by TKO if they knock you down three times in a single round. 
+If round 3 ends before one of you is knocked out, you might be able to win by decision.
+
+To win by decision, you need to have a certain number of points. 
+
 
 
 ![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/background_mini_text.png "KNOCK'D OUT!!")
 
-Player Moves In GAME
+Player Key Down Event Moves In GAME
 ------
 
 K_LEFT
-⋅⋅* Dodge to left
+Press the Left Arrow Key will make the Player Dodge to left
 
 K_RIGHT
-⋅⋅* Dodge to right
+Press the Right Arrow Key will make the Player Dodge to right
 
 K_Down
-⋅⋅* Once: Block
-⋅⋅* Twice rapidly ducking
+Press the Down Arrow Key will make the Player Block
+K_Down, K_Down
+Press the Down Arrow KeyTwice rapidly will make the Player duck
 
 K_SPACE
-⋅⋅* If pressed between rounds, Coach's encouraging advice can increase Player's stamina
+Press the space bar between rounds, Coach's encouraging advice can increase Player's stamina
 
 K_W
-⋅⋅* Uppercut (if the number of stars is 1 or greater!)
+Press the W key will make the player perform an Uppercut (but only if if the number of stars is 1 or greater!)
 
 K_A
-⋅⋅* Left body blow
-⋅⋅* (when Player is knocked down pressing rapidly and he'll get up)
+Press the A key will make the player perform an Left body blow
+Press the A key (when Player is knocked down pressing rapidly and he'll get up)
 
 K_UP & K_A
-⋅⋅* pressing up and left punch punch to the left face
+Pressing the UP Arrow key and the A key together will make the player perform a left punch punch to the left face
 
 K_D
-⋅⋅* Left body blow
+Pressing the D key will make the player perform a Left body blow
 
 K_UP & K_D
-⋅⋅* pressing up and right punch punch to the left face
+Pressing the UP Arrow key and the D key together will make the player perform a right punch punch to the rightt face
 
 Time Events
 ------
