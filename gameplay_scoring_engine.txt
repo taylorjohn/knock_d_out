@@ -1,0 +1,34 @@
+def punch_dodged(count):
+    font = pygame.font.SysFont(None, 25)
+    text = font.render("Dodged: "+str(count), True, black)
+    gameDisplay.blit(text,(0,0))
+
+
+# add points
+
+def punch_hit(count):
+    font = pygame.font.SysFont(None, 25)
+    text = font.render("Hit: "+str(count), True, black)
+    gameDisplay.blit(text,(0,0))
+
+# a efective hit on opponent adds 1 star
+# maximum number of stars is 3
+# if number of stars is 0 then player can not punch
+
+def punch_collision(count):
+    font = pygame.font.SysFont(None, 25)
+    text = font.render("Hit: "+str(count), True, black)
+    gameDisplay.blit(text,(0,0))
+
+# a collision with opponent subtracts a 1 star
+
+
+# round
+
+	# counter counts up to 3 minutes
+
+
+
+
+
+#star location is
