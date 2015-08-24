@@ -116,6 +116,14 @@ Match Points
 Match points are won when Player punches his opponent, 
 Uppercuts, and effective punches win the greatest number of match points.
 
+Scoring with match points occurs as follows:
+
+Normal punch  : 10 points
+Gaining a Star: 110 points
+Star punch    : 500 points
+Knockdown     : 1010 points
+Star Knockdown: 1500 points
+
 Elapsed Time
 Show the lapsed time for the current round
 
@@ -126,37 +134,38 @@ Shows the current round number
 
 ![KNOCK'D OUT!!](https://github.com/taylorjohn/knock_d_out/blob/579beebdc10e462d2563c5cb9b0e9273ea9693c2/art/background_mini_text.png "KNOCK'D OUT!!")
 
-Player Moves In GAME
+Player Key Down Event Moves In GAME
 ------
 
 K_LEFT
-⋅⋅* Dodge to left
+Press the Left Arrow Key will make the Player Dodge to left
 
 K_RIGHT
-⋅⋅* Dodge to right
+Press the Right Arrow Key will make the Player Dodge to right
 
 K_Down
-⋅⋅* Once: Block
-⋅⋅* Twice rapidly ducking
+Press the Down Arrow Key will make the Player Block
+K_Down, K_Down
+Press the Down Arrow KeyTwice rapidly will make the Player duck
 
 K_SPACE
-⋅⋅* If pressed between rounds, Coach's encouraging advice can increase Player's stamina
+Press the space bar between rounds, Coach's encouraging advice can increase Player's stamina
 
 K_W
-⋅⋅* Uppercut (if the number of stars is 1 or greater!)
+Press the W key will make the player perform an Uppercut (but only if if the number of stars is 1 or greater!)
 
 K_A
-⋅⋅* Left body blow
-⋅⋅* (when Player is knocked down pressing rapidly and he'll get up)
+Press the A key will make the player perform an Left body blow
+Press the A key (when Player is knocked down pressing rapidly and he'll get up)
 
 K_UP & K_A
-⋅⋅* pressing up and left punch punch to the left face
+Pressing the UP Arrow key and the A key together will make the player perform a left punch punch to the left face
 
 K_D
-⋅⋅* Left body blow
+Pressing the D key will make the player perform a Left body blow
 
 K_UP & K_D
-⋅⋅* pressing up and right punch punch to the left face
+Pressing the UP Arrow key and the D key together will make the player perform a right punch punch to the rightt face
 
 Time Events
 ------
