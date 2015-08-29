@@ -1,0 +1,44 @@
+Blocking Out Scene Management
+#  Splash Screen
+#  Intro movie
+#  Title Screen
+	New
+	Continue
+#  Pre Fight Screen
+	Current Match Opponent and Player Stats
+# Round One
+	KD
+		Knock Down Count Plus 1
+	TKO
+	 	if knock down count = 3
+	 		Next Opponent
+	KO
+		Next Opponent
+	TO (timedout)
+		if timer = 180 (3 minutes)
+		Next Round
+#  Inbetween screen
+	tips & Stats
+	regain stamina
+# Round Two
+	3 minute timer
+	TKO
+	KO
+	TO (timedout)
+#  Inbetween Round screen 2
+	tips
+	regain stamina
+# Round Three
+	3 minute timer
+	TKO
+	KO
+	TO (timedout)
+# Lose Match
+	Restart same opponent1
+# Win Match
+	Next opponent2
+# Change Circuit
+	win Circuit go onto next Circuit
+# Credits
+	Scrolling Credits
+
